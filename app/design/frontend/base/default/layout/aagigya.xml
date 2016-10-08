@@ -29,7 +29,7 @@
         <reference name="right">
             <block name="gigya.activity.feed" type="core/template" after="-" template="gigya/activityfeed.phtml"/>
         </reference>
-        <reference name="top.links" >
+<!--        <reference name="top.links" >
             <action method="addParamsByUrl">
                 <url helper="customer/getRegisterUrl"/>
                 <params>
@@ -45,11 +45,12 @@
                 <ifConfig><config>gigya_login/gigya_user_management/login_modes</config><value>raas</value></ifConfig>
             </action>
         </reference>
+-->        
         <reference name="bottom.container">
            <block type="Gigya_Social_Block_Followbar" name="gigya.followbar" template="gigya/followbar.phtml"/>
         </reference>
     </default>
-    <customer_logged_out>
+<!--    <customer_logged_out>
         <reference name="top.links" >
         <action method="addParamsByUrl">
             <url helper="customer/getLoginUrl"/>
@@ -60,6 +61,7 @@
         </action>
         </reference>
     </customer_logged_out>
+-->
     <customer_logged_in>
         <remove name="gigya.hp.login"/>
     </customer_logged_in>
